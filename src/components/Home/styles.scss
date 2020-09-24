@@ -1,0 +1,72 @@
+.home{
+    &-img{
+        width: 100%;
+
+    }
+    &-pic-block{
+        position: relative;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+    }
+    &-cal-pic{
+        background-color: #272829;
+    padding:10px 5px;
+    padding-bottom: 20px;
+    display: flex;
+    }
+    &-title{
+        position: absolute;
+        font-size: 25px;
+        color: #FDD000;
+        text-transform: uppercase;
+        top: 10px;
+        font-weight: 700;
+        right: 10px;
+        width: 100%;
+    }
+    &-subtitle{
+        position: absolute;
+        color: #DFDFDF;
+        top: 100px;
+        right: 10px;
+        width: 61%;
+    }
+}
+@media (min-width: 310px){
+    .home-title{
+        width: 52%;
+    }
+}
+
+@media (min-width: 568px){
+    .home-title{
+        width: 42%;
+        top:85px;
+    }
+    .home-subtitle{
+        width: 46%;
+        top: 165px;
+    }
+}
+@media (min-width: 767px){
+    .home-title{
+        font-size: 45px;
+        right: 30px;
+    }
+    .home-subtitle{
+        font-size: 30px;
+        top: 260px;
+        right: 30px;
+
+    }
+}
+@media (min-width: 1023px){
+   .home{
+       display: flex;
+       &-cal-pic{
+        width: 480px;
+
+       }
+   }
+}

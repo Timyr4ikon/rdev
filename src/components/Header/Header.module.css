@@ -1,0 +1,89 @@
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+position: relative;
+}
+.home{
+    
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+  color:#3D3D3D; 
+}
+.about{
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+  color:#3D3D3D;
+}
+
+.active{
+    color:#FDD000;
+}
+.active::after{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #FDD000;
+    bottom: -15px;
+    right: calc(50% - 6px);
+
+}
+.navLogo{
+    width: 105px;
+    height: 50px;
+    background-image: url('../../images/Logo-RGB.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+@media (min-width: 767px){
+    .header{
+        justify-content: normal;
+    }
+    .navLogo{
+        margin-left: 10%;
+    }
+    .home{
+        position: absolute;
+        top: 36px;
+        right: 0;
+        margin-right: 30%;
+        font-size: 24px;
+    }
+    .active::after{
+        width: 10px;
+        height: 10px;
+    }
+    .about{
+        position: absolute;
+        top: 36px;
+        right: 0;
+        margin-right: 10%;
+        font-size: 24px;
+    }
+}
+@media (min-width: 1023px){
+    .home{
+        margin-right: 28%;
+    }
+}
+@media (min-width: 1399px){
+    .home{
+        margin-right: 20%;
+    }
+}

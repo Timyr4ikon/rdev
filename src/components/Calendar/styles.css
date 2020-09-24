@@ -1,0 +1,96 @@
+.Calendar {
+  width: 100%;
+  max-width: 470px;
+  color: #dfdfdf;
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
+  align-self: center;
+
+}
+
+.month-header {
+  color: #dfdfdf;
+  text-transform: uppercase;
+  height: 29px;
+  border-bottom: 1.5px solid #666666;
+}
+.nav button{
+    width: 20px;
+    height: 12px;
+    border: none;
+    background-color: transparent;
+    background-position: center ;
+    background-size: 8px 8px;
+    background-repeat: no-repeat;
+  cursor: pointer;
+ 
+}
+.previous button {
+  background-image: url('../../images/left-arrow.svg');
+}
+.next button {
+  background-image: url('../../images/arrow-point-to-right.svg');
+
+}
+.month,
+.year{
+    font-size: 12px;
+    font-weight: 500;
+}
+.Week{
+    height: 42px;
+    text-align: center;
+    
+}
+.Week td{
+    padding-top: 12px;
+}
+.Week td button{
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    background-color: transparent;
+    color: inherit;
+    font-size: 12px;
+    border: none;
+}
+.days-header{
+    border-bottom: 1.5px solid #666666;
+    border-top: 1.5px solid #666666;
+
+    height: 42px;
+}
+.DayOfWeek{
+    padding-top: 12px;
+}
+.other-month{
+    color: #666666;
+}
+.selected button{
+    transition: 0.2s;
+    background-color: #FDD000 !important;
+    color:#272829 !important;
+    border: none;
+}
+.tfoot{
+    bottom: -52px;
+}
+@media (min-width: 1023px){
+    .Calendar{
+        width: 248px;
+    }
+    
+ }
+ @media (min-width: 1100px){
+    .Calendar{
+        width: 328px;
+    }
+    
+ }
+ @media (min-width: 1300px){
+    .Calendar{
+        width: 480px;
+    }
+    
+ }

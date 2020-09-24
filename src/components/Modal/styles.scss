@@ -1,0 +1,101 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+
+  &-open .modal {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  &-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+  }
+  &-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+  }
+  &-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: 0;
+  }
+  &-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  &-label {
+    font-size: 14px;
+    color: #666666;
+  }
+  &-input {
+    display: block;
+    width: calc(100% - 10px);
+    border: 1px solid #fdd000;
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 600;
+  }
+}
+.fade {
+  transition: opacity 0.15s linear;
+}
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+}
+button.close {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: #fdd000;
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+    &-centered {
+      min-height: calc(100% - 3.5rem);
+    }
+  }
+}

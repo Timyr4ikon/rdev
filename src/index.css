@@ -1,0 +1,19 @@
+@import '../node_modules/reset-css/reset.css';
+@import '../node_modules/animate.css/animate.css';
+
+body {
+  margin: 0;
+    font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1900px;
+  min-width: 300px;
+}
