@@ -1,0 +1,2 @@
+(this["webpackJsonpreacktonx-movies"]=this["webpackJsonpreacktonx-movies"]||[]).push([[5],{44:function(e,t,i){e.exports={img:"jj_img__Czd_v"}},51:function(e,t,i){"use strict";i.r(t);var c=i(0),n=i.n(c),s=i(44),a=i.n(s);t.default=function(){return n.a.createElement("img",{className:a.a.img,alt:"dfsa",src:"https://i.gifer.com/origin/26/264162db570a4614c8fd7dc15c757b8e_w200.webp"})}}}]);
+//# sourceMappingURL=5.53373487.chunk.js.map
