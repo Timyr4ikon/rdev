@@ -17,10 +17,10 @@ export default class App extends Component {
           <Header/>
           <Suspense fallback={<></>}>
             <Switch>
-                <Route path="/" exact component={Home}/>
-                <Route path="/about" component={AboutUs}/>
-                <Route path="/404" component={NotFound}/>
-                <Redirect to="/404" />
+                <Route path="/rdev/" exact component={Home}/>
+                <Route path="/rdev/about" component={AboutUs}/>
+                <Route path="/rdev/404" component={NotFound}/>
+                <Redirect to="/rdev/404" />
             </Switch>
           </Suspense>
       </section>
